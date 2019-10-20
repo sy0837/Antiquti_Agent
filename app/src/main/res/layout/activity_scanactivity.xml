@@ -10,17 +10,28 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/connectbutton"
+        android:layout_above="@+id/scanbtn"
         android:background="@drawable/wifi"
         android:layout_centerHorizontal="true"/>
     <Button
-        android:id="@+id/connectbutton"
+        android:id="@+id/scanbtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/buttonbackground"
         android:text="Scan to connect"
         android:layout_centerInParent="true"
         />
+
+    <Button
+        android:id="@+id/connectbtn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonbackground"
+        android:text="connect"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:visibility="invisible"/>
 
 
 </RelativeLayout>
