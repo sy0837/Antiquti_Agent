@@ -52,8 +52,7 @@ public class scanactivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(scanactivity.this,scanner.class);
                 startActivityForResult(intent,REQUEST_CODE);
-                ConnectivityManager connManager= (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-                final NetworkInfo mwifi=connManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
+
 
 
 
@@ -65,6 +64,8 @@ public class scanactivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {    
                 connectToWifi(SSID,PASSWORD);
+                ConnectivityManager connManager= (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+                final NetworkInfo mwifi=connManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
 
 
 
