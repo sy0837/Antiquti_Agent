@@ -40,6 +40,7 @@ public class scanactivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scanactivity);
+        result=findViewById(R.id.txt);
 
         wifiManager= (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
         if(ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA)!= PackageManager.PERMISSION_GRANTED){
