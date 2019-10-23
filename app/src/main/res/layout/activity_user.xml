@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="@drawable/gradient1"
-        android:layout_marginTop="2dp"
+        android:layout_marginTop="1dp"
         >
         <ImageView
             android:layout_width="100dp"
@@ -24,13 +24,14 @@
         android:layout_below="@id/tool"
         android:layout_above="@+id/lin"
         android:background="#fff"
-        android:layout_marginTop="2dp"></RelativeLayout>
+        android:layout_marginTop="1dp"></RelativeLayout>
     <LinearLayout
         android:id="@+id/lin"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:background="@color/GreenMain"
+        android:layout_marginTop="1dp"
         >
         <ImageView
             android:id="@+id/home"

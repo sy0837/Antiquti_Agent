@@ -75,6 +75,7 @@ public class scanactivity extends AppCompatActivity {
                         if(n==0){
                             Intent intent = new Intent(scanactivity.this,homepage.class);
                             startActivity(intent);
+                            overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out);
                             finish();
                         }else{
                             handle.postDelayed(this,1000);
