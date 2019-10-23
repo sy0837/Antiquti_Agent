@@ -66,6 +66,21 @@ public class scanactivity extends AppCompatActivity {
                 connectToWifi(SSID,PASSWORD);
                 ConnectivityManager connManager= (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
                 final NetworkInfo mwifi=connManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
+                final Handler handle = new Handler();
+                handle.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        ;
+                        n--;
+                        if(n==0){
+                            Intent intent = new Intent(scanactivity.this,homepage.class);
+                            startActivity(intent);
+                            finish();
+                        }else{
+                            handle.postDelayed(this,1000);
+                        }
+                    }
+                });
 
 
 
